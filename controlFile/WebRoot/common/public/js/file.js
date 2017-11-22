@@ -1,4 +1,4 @@
-var project = 'justfortest';
+var project = 'controlFile';
 document.write('<link rel="stylesheet" type="text/css" href="/'+project+'/common/public/css/public.css">');
 document.write('<link rel="stylesheet" type="text/css" href="/'+project+'/common/public/css/main.css">');
 
