@@ -1,0 +1,54 @@
+/* ----------------------------------tag_ctrl.html----------------------------------- */
+
+/* ------------------标题部分------------------ */
+.subnav {
+	width: 1100px;
+	margin: 100px auto;
+	font-size: 20px;
+	border-collapse: separate;
+}
+
+.subnav td {
+	width: 200px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+.subnav .active{
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 0px solid black;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+/* ------------------标签部分------------------ */
+.tag {
+	width: 1100px; 
+	margin: 60px auto;
+	font-size: 17px;
+}
+
+.tag span {
+	float: left;
+/* 	color: #999;
+	float: left;
+	margin: 3px 0; */
+}
+
+.tag ul {
+	float: left;
+	width: 1000px;
+}
+
+.tag li {
+/* 	display: inline-block;
+	margin: 3px 20px; */
+} 
+
+
+
+
+
