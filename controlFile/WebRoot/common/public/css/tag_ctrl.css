@@ -33,9 +33,8 @@
 
 .tag span {
 	float: left;
-/* 	color: #999;
-	float: left;
-	margin: 3px 0; */
+	width: 100px;
+	color: #999;
 }
 
 .tag ul {
@@ -44,11 +43,16 @@
 }
 
 .tag li {
-/* 	display: inline-block;
-	margin: 3px 20px; */
+	display: inline-block;
+	margin: 3px 20px;
+	width: 80px;
 } 
 
+.tag .tag_input {
+	width: 200px;
+}
 
-
-
+.tag input[type="text"] {
+	width: 150px;
+}
 
