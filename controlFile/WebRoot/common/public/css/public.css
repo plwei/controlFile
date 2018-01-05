@@ -14,6 +14,55 @@ a {
 }
 
 
+/* ------------------主导航------------------ */
+.navigator {
+	background-color: #DCDCDC ;
+	width: 100%;
+	height: 70px;
+}
+
+.navigator > a, .navigator .btn_add > span {
+	display: inline-block;
+	width: 120px;
+	line-height: 70px;
+	text-align: center;
+	border-right: 1px solid #D3D3D3;
+	font-size: 20px;
+	color: rgba(212, 44, 198, 0.77);
+}
+
+.navigator > a:first-child {
+	border-left: 1px solid #D3D3D3;
+	margin-left: 20px;
+}
+
+.navigator .active {
+	border-bottom: 1px solid #CD853F;
+}
+
+.btn_add {
+	float: right;
+}
+
+.btn_add > span {
+	border-left: 1px solid #D3D3D3;
+}
+
+.btn_add_menu {
+	display: none;	
+}
+
+.btn_add_menu a {
+	display: block;
+	width: 120px;
+	line-height: 40px;
+	text-align: center;
+	border-right: 1px solid #D3D3D3;
+	border-bottom: 1px solid #D3D3D3;
+	border-left: 1px solid #D3D3D3;
+	font-size: 18px;
+	color: rgba(212, 44, 198, 0.77);
+}
 
 
 

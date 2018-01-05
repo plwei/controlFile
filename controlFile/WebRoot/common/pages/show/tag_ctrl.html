@@ -9,6 +9,18 @@
 </head>
 
 <body>
+	<div class="navigator">
+		<a href="video.html" class="active">视频区</a>
+		<a href="picture.html">图片区</a>
+		<a href="novel.html">小说区</a>
+		<div class="btn_add">
+			<span>设置</span>
+			<div class="btn_add_menu">
+				<a href="tag_ctrl.html" target="_blank">标签管理</a>
+				<a href="file_ctrl.html" target="_blank">文件管理</a>
+			</div>
+		</div>
+	</div>
 	<table class="subnav">
 		<tr>
 			<td>&nbsp;</td>
@@ -18,20 +30,20 @@
 			<td>&nbsp;</td>
 		</tr>
 	</table>
-	<div id="add" class="tag">
+	<div class="tag">
 		<div>
 			<span>标签级别：</span>
 			<ul>
-				<li><input type="radio" name="bqjb" value="1">一级</li>
-				<li><input type="radio" name="bqjb" value="2">二级</li>
-				<li><input type="radio" name="bqjb" value="3">三级</li>
-				<li><input type="radio" name="bqjb" value="4">四级</li>
+				<li><input type="radio" name="bqjb" value="0">一级</li>
+				<li><input type="radio" name="bqjb" value="1">二级</li>
+				<li><input type="radio" name="bqjb" value="2">三级</li>
+				<li><input type="radio" name="bqjb" value="3">四级</li>
 			</ul>
 		</div>
 		<div>
 			<span>一级标签：</span>
 			<ul>
-				<li><input type="radio" name="bq_1" value="1">视频区</li>
+				<li><input type="radio" name="bq_1" value="1"><span ondblclick="tag_upd(this)">视频区</span></li>
 				<li><input type="radio" name="bq_1" value="2">图片区</li>
 				<li><input type="radio" name="bq_1" value="3">小说区</li>
 			</ul>
@@ -39,17 +51,17 @@
 		<div>
 			<span>二级标签：</span>
 			<ul>
-				<li><input type="radio" name="bq_2" value="1">电影</li>
-				<li><input type="radio" name="bq_2" value="2">电视剧</li>
-				<li><input type="radio" name="bq_2" value="3">动漫</li>
+				<li><input type="radio" name="bq_2" value="1" disabled>电影</li>
+				<li><input type="radio" name="bq_2" value="2" disabled>电视剧</li>
+				<li><input type="radio" name="bq_2" value="3" disabled>动漫</li>
 			</ul>
 		</div>
 		<div>
 			<span>三级标签：</span>
 			<ul>
-				<li><input type="radio" name="bq_3" value="1">地区</li>
-				<li><input type="radio" name="bq_3" value="2">类型</li>
-				<li><input type="radio" name="bq_3" value="3">主演</li>
+				<li><input type="radio" name="bq_3" value="1" disabled>地区</li>
+				<li><input type="radio" name="bq_3" value="2" disabled>类型</li>
+				<li><input type="radio" name="bq_3" value="3" disabled>主演</li>
 			</ul>
 		</div>
 		<div>

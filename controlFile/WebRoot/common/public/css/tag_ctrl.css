@@ -31,7 +31,7 @@
 	font-size: 17px;
 }
 
-.tag span {
+.tag > div > span {
 	float: left;
 	width: 100px;
 	color: #999;
@@ -44,8 +44,8 @@
 
 .tag li {
 	display: inline-block;
-	margin: 3px 20px;
-	width: 80px;
+	margin: 3px 10px;
+	width: 120px;
 } 
 
 .tag .tag_input {
