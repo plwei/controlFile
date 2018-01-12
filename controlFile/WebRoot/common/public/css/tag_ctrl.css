@@ -45,7 +45,7 @@
 .tag li {
 	display: inline-block;
 	margin: 3px 10px;
-	width: 120px;
+	width: 150px;
 } 
 
 .tag .tag_input {
@@ -55,4 +55,13 @@
 .tag input[type="text"] {
 	width: 150px;
 }
+
+/* ------------------标签部分------------------ */
+.btn {
+	width: 1100px; 
+	height: 30px;
+	margin: 0 auto;
+	text-align: center;
+}
+
 
