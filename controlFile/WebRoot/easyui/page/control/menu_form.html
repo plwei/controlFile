@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>菜单表单</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="../../public/js/includeFile.js"></script>
+<script type="text/javascript" src="menu_form.js"></script>
+</head>
+
+<body>
+	<ul class="formUl">
+		<li>
+			<label>菜单名称：</label>
+			<input id="name" name="name" class="easyui-textbox" data-options="required: true">
+		</li>
+		<li>
+			<label>菜单类型：</label>
+			<select id="cdlx" name="cdlx">
+			</select>
+		</li>
+		<li class="ym" style="display:none">
+			<label>上级目录：</label>
+			<select id="pid" name="pid" class="easyui-combobox">
+			</select>
+		</li>
+		<li class="ym" style="display:none">
+			<label>链接地址：</label>
+			<input id="url" name="url" class="easyui-textbox">
+		</li>
+		<li>
+			<label>排列序号：</label>
+			<input id="plxh" name="plxh" class="easyui-numberbox" data-options="required:true">
+		</li>
+		<li>
+			<label>是否有效：</label>
+			<select id="yxbz" name="yxbz"></select>
+		</li>
+		<li class="btn">
+			<a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'icon-save'" onclick="save()">保存</a>
+			<a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'icon-cancel'" onclick="parent.close()">取消</a>
+		</li>
+	</ul>
+</body>
+</html>

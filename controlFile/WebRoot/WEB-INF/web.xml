@@ -4,10 +4,20 @@
   <servlet>
     <description>This is the description of my J2EE component</description>
     <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>ControlServlet</servlet-name>
-    <servlet-class>com.cf.util.ControlServlet</servlet-class>
+    <servlet-name>CommonControlServlet</servlet-name>
+    <servlet-class>com.common.util.CommonControlServlet</servlet-class>
   </servlet>
-
+  <servlet-mapping>
+    <servlet-name>CommonControlServlet</servlet-name>
+    <url-pattern>/CommonControlServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ControlServlet</servlet-name>
+    <servlet-class>com.easyui.util.ControlServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
     <servlet-name>ControlServlet</servlet-name>
     <url-pattern>/ControlServlet</url-pattern>

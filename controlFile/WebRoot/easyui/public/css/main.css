@@ -1,0 +1,56 @@
+@CHARSET "UTF-8";
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.panel_header {
+	height: 80px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.searchUl {
+	margin: 10px;
+}
+
+.searchUl li {
+	display: inline-block;
+	width: 33%;
+	margin: 5px 0px;
+}
+
+.searchUl label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+
+.formUl {
+	width: 99%;
+	margin-top: 30px;
+}
+
+.formUl li {
+	width: 90%;
+	margin: 10px auto;
+}
+
+.formUl label {
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+}
+
+.formUl .btn {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.formUl .btn a {
+	margin: 0px 10px;
+}

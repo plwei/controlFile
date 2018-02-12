@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classes>
+	<class name="com.easyui.obj.SelectTree">
+		<method id="getSelect" name="getSelect"></method>
+	</class>
+	
+	<class name="com.easyui.obj.Menu">
+		<method id="menuIns" name="menuIns"></method>
+	</class>
+</classes>
