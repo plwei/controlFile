@@ -19,7 +19,7 @@ public class SelectTree {
 		pfp.setProcedure(para.get("procedure"));
 		String[] arr = {para.get("type"), ""};
 		pfp.setArr(arr);
-		String[] out = {"msg", "rows"};
+		String[] out = {"rows"};
 		pfp.setOut(out);
 		Map map = JDBCTools.getTools().queryProcedure(pfp);
 		return map;

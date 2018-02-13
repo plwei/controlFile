@@ -189,13 +189,14 @@ public class JDBCTools {
 			for(int i = 0; i < arr.length; i++) {
 				sql += "?,";
 			}
-			sql += "?)}";
+			sql = sql.substring(0, sql.length()-1) + ")}";
+			System.out.println(sql);
 			cs = conn.prepareCall(sql);
 			for (int i = 0; i < arr.length; i++) {
 //				System.out.println(arr[i]);
 				cs.setObject(i+1, arr[i]);//给存储过程传参
 			}
-			cs.registerOutParameter(arr.length+1, Types.VARCHAR);
+//			cs.registerOutParameter(arr.length+1, Types.VARCHAR);
 			boolean hadResults = cs.execute();//执行存储过程
 			int j = 0;
 			while (hadResults) {

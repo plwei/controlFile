@@ -39,8 +39,16 @@ public class ControlServlet extends HttpServlet {
 		Map map = GetMethod.doInvoke(para);
 //		Map map = new HashMap<String, String>();
 		PrintWriter out = response.getWriter();
-		System.out.println(map);
-		out.println(map);
+		if(para.get("ui") != null) {
+			String ui = (String)para.get("ui");
+			if(ui.equals("combo")) {
+				out.println(map.get("rows"));
+			}
+		} else {
+			JSONObject jo = JSONObject.fromObject(map);
+			System.out.println(jo);
+			out.println(jo);
+		}
 		out.flush();
 		out.close();
 	}

@@ -8,7 +8,7 @@ $(function() {
 	$('#cdlx').combobox({
 		valueField: 'id',
 		textField: 'text',
-		panelHeight: 100,
+		panelHeight: 'auto',
 		required: true,
 		data: [{
 			'id': '1',
@@ -45,9 +45,13 @@ function save() {
 		type: 'POST',
 		data: {para: JSON.stringify(json)},
 		success: function(data) {
-			$.messager.alert('信息', '保存成功！', 'info', function() {
-				parent.close();
-			})
+			if(data.ret == 0) {
+				$.messager.alert('信息', '保存成功！', 'info', function() {
+					parent.close();
+				})
+			} else {
+				$.messager.alert('错误', '保存失败！', 'error');
+			}
 		},
 		error: function() {
 			$.messager.alert('错误', '保存失败！', 'error');

@@ -19,6 +19,7 @@ function getYxbz() {
 }
 
 function getCombobox(id, para) {
+	para.ui = 'combo';
 	$('#'+id).combobox({
 		valueField: 'dm',
 		textField: 'mc',
